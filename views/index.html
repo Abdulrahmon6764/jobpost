@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+        *{
+            margin: none;
+            padding: none;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+         .d-flex{
+            list-style-type: none;
+            font-size: 22px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         }
+         li a{
+            text-decoration: none;
+         }
+         .container-fluid{
+            margin-top: 150px;
+         }
+         .col-md-6 div{
+            margin-left: 190px;
+         }
+         .nav a{
+           padding-top:5px ;
+           padding-left: 5px;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           color: darkslateblue;
+           font-size: 25px;
+           font-weight: bold;
+         } 
+         .dis{
+            font-size: 25px;
+            font-weight: 400;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color:deepskyblue;
+         }
+         .find{
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:deepskyblue;
+         }
+    .inp{
+        width: 550px;
+       outline-style: solid;
+       outline-color: ghostwhite;
+       border: 1px solid gainsboro;
+       border-radius: 20px;
+       padding: 7px;
+       box-shadow: 5px 3px 8px #888888;
+      background-color:wheat;
+      transition: width 3s;
+    }
+  
+  
+    .fa-location-dot{
+        position: relative;
+        left: -135px;
+       font-size: 20px;
+     
+    }
+    .any{
+        position: relative;
+        left: -125px;
+       /* font-size: 20px; */
+    }
+   .bacgroundPic{
+    background-image: url('https://cdn.pixabay.com/photo/2021/12/09/14/16/glass-cleaning-6858243_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+   }
+.bgbodytertiary{
+    background-color:burlywood;
+}
+
+/* .lil a:hover{
+    color: black; 
+}
+.lil a:active{
+    border-bottom: 3px solid slateblue;
+} */
+.lil a.active {
+ border-bottom: 3px solid black;
+  color: white;
+}
+
+.lil a:hover:not(.active) {
+  color: black;
+}
+.bodtop{
+    border-top: 1px solid gainsboro;
+   
+}
+.bodlef{
+    border-left: 1px solid gainsboro;
+   
+}
+.bord{
+    border-right: 1px solid gainsboro;
+}
+.padle img{
+    padding-left: 30px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* justify-content: center;
+    justify-content: space-evenly; */
+}
+.flexco{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+.flexflo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    /* margin: 0 0 0 10px; */
+}
+    </style>
+    <link rel="stylesheet" href="../css/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bacgroundPic">
+    <nav class="navbar bgbodytertiary">
+        <div class="container">
+            <span class="nav">
+                <img width="70px" src="https://th.bing.com/th/id/R.1f134c5f399d6bec70182c72791b7a92?rik=PEbXANTyri4VLQ&pid=ImgRaw&r=0" alt="stars">
+                <a  class="navbar-brand">Lights Job</a>
+               </span>
+          <form  role="search">
+            <ul class="d-flex">
+                <li class="me-5 lil">
+                 <a class="active" href="/">Home</a>
+                </li>
+                <li class="me-5 lil">
+                 <a  href="/findJob">Find Job</a>
+                </li>
+                <li class="me-5 lil">
+                  <a href="/add-Job">Post Job</a>
+                </li>
+            </ul>
+          </form>
+        </div>
+      </nav>
+  
+      <div class="container-fluid">
+      <div class="row">
+      <div class="col-md-6">
+       <div style="margin-top: 100px;">
+        <h3 class="dis">Discover +5000 jobs</h3>
+        <h1 class="find">Find Exciting <br> Career Today</h1>
+       <li class="bode"><input class="inp" type="text" name=""><i class="fa-solid fa-location-dot"></i><span class="any">Any Location</span></li>
+        <h5 style="font-size: 15px;color: grey;">In lights jobs we trying things easy for user and manage their task quicker <br> than ever.</h5>
+       </div>
+      </div>
+      <div class="col-md-6">
+      <div>
+       <!-- <marquee behavior="scroll" direction="left">  -->
+        <!-- <img width="500px" height="500px"  class="fi" src="https://cdn.pixabay.com/photo/2018/04/17/14/50/soundcloud-3327672_640.jpg" alt="pic"> -->
+         <img width="500px" class="nonee" height="500px"  src="https://cdn.pixabay.com/photo/2018/04/17/14/50/soundcloud-3327672_640.jpg" alt="pic">
+    <!-- </marquee> -->
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row bodtop">
+         <div class="col-md-4 bord p-5">
+          <div class="">
+            <h1 style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">130k +</h1>
+            <h5 style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Tech Jobs</h5>
+          </div>
+         </div>
+         <div class="col-md-5 p-5 text-center">
+         <div>
+            <h1 style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">6,000,000</h1>
+            <h5 style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Matches Made</h5>
+         </div>
+         </div>
+         <div class="col-md-3 bodlef p-5 text-center">
+        <div class="">
+            <h1 style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">8M+</h1>
+           <h5 style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> Startup-ready Candidates</h5>
+        </div>
+         </div>
+        </div>
+    </div>
+    <div style="border-top: 1px solid gainsboro;border-bottom: 3px solid gray;">
+        <div style="padding-top: 50px;" class="padle container">
+            <marquee behavior="scroll" direction="left">
+                <img width="200px" src="https://assets-global.website-files.com/636dd759d7128716627e62a9/636dd759d71287f1797e6321_Vector-4.svg" alt="roblox">
+                <img width="200px" src="https://assets-global.website-files.com/636dd759d7128716627e62a9/636dd759d712878c8c7e62ff_Vector-2.svg" alt="peloton">
+                <img width="200px" src="https://assets-global.website-files.com/636dd759d7128716627e62a9/636dd759d71287cd407e62bd_Group%2047.svg" alt="aortel">
+                <img width="200px" src="https://assets-global.website-files.com/636dd759d7128716627e62a9/636dd759d712872b6c7e62ad_g3707.svg" alt="nerds">
+                <img width="200px" src="https://assets-global.website-files.com/636dd759d7128716627e62a9/636dd759d71287437a7e6343_Vector.svg" alt="cruise">
+                <img width="200px" src="https://assets-global.website-files.com/636dd759d7128716627e62a9/636dd759d712874df97e6332_Vector-5.svg" alt="doordash">
+                <img width="200px" src="https://assets-global.website-files.com/636dd759d7128716627e62a9/636dd759d7128746107e6310_Vector-3.svg" alt="honey">
+                <img width="200px" src="https://assets-global.website-files.com/636dd759d7128716627e62a9/636dd759d712873dc17e62ee_Vector-1.svg" alt="iffn">
+                <img width="200px" src="https://assets-global.website-files.com/636dd759d7128716627e62a9/636dd759d71287f2017e62db_Group.svg" alt="postmast">
+                <img width="200px" src="https://assets-global.website-files.com/636dd759d7128716627e62a9/636dd759d712877d277e62be_Group-1.svg" alt="plaid">
+
+            </marquee>
+        </div>
+    </div><br><br><br>
+
+    <div class="container">
+     <div class="row">
+      <div class="col-md-8">
+       <div>
+        <img width="100%" src="https://assets-global.website-files.com/636dd759d71287e8ac7e6280/636dd759d7128701db7e63c6_Frame%2520283-min-p-800.png" alt="onf">
+       </div>
+      </div>
+      <div class="col-md-4" style="padding-top: 130px;">
+      <div>
+       <div>
+        <h5 style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">GOT TALENT?</h5>
+        <h1 style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Why job seekers love us</h1>
+       </div>
+      <div>
+        <footer class="mb-3"><span style="font-size: 35px;"><i class="fa-regular fa-star"></i></span> <span>Unique jobs at startups and tech companies you can't  find anywhere else</span></footer>
+        <footer class="mb-3"><span style="font-size: 35px;"><i class="fa-solid fa-arrow-pointer"></i></span> <span>Say goodbye to cover letters - your profile is all you need. One click to apply and you're done.</span></footer>
+        <footer class="mb-3"><span style="font-size: 35px;"><i class="fa-solid fa-book"></i> </span><span>Everything you need to know to job search - including seeing salary and stock options upfront when looking</span></footer>
+        <footer class="mb-3"><span style="font-size: 35px;"><i class="fa-solid fa-minimize"></i></span> <span>Connect directly with founders at top startups - no third party recruiters allowed</span></footer>
+      </div>
+        <button class="btn btn-outline-danger">Learn More</button>
+      </div>
+      </div>
+     </div>
+    </div>
+
+    <div style="padding-top: 50px; border-top: 2px solid gainsboro;" class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" style="padding-top: 130px;">
+                    <div>
+                     <div>
+                      <h5 style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Need Talent?</h5>
+                      <h1 style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Why recruiters love us</h1>
+                     </div>
+                    <div>
+                      <footer class="mb-3"><span style="font-size: 35px;"><i class="fa-solid fa-user"></i></span> <span>8 million responsive and startup-ready candidates, with all the information you need to vet them</span></footer>
+                      <footer class="mb-3"><span style="font-size: 35px;"><i class="fa-solid fa-bars"></i></span> <span>Everything you need to kickstart your recruiting - get job posts, company branding, and HR tools set up within 10 minutes, for free</span></footer>
+                      <footer class="mb-3"><span style="font-size: 35px;"><i class="fa-solid fa-ranking-star"></i></span> </span><span>A free applicant tracking system, or free integration with any ATS you may already use</span></footer>
+                      <p style="font-size: 15px;">Plus, we can do the vetting for you! With Curated, we review the world's top tech talent and highlight candidates directly to you 2x a week.</p>
+                    </div>
+                      <button class="btn btn-outline-danger">Learn More</button>
+                    </div>
+                    </div>
+
+             <div class="col-md-8">
+              <div class="ms-5">
+               <img width="100%" src="https://assets-global.website-files.com/636dd759d71287e8ac7e6280/636dd759d712879f567e63c5_Frame%2520284-min-p-800.png" alt="onf">
+              </div>
+             </div>
+            </div>
+           </div>
+    </div>
+    <div style="border-top: 1px solid gainsboro;padding-top: 50px;" class="container">
+        <div class="text-center">
+            <h5 style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Don't just take it from us</h5>
+           <h1 style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">From our users</h1>
+        </div>
+    </div>
+
+    <div class="container">
+    <div class="row pt-5">
+    <div style="border: 1px solid gray;" class="col-md-3">
+    <div class="p-5 text-center pb-2">
+        <div style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 45px;"><i  class="fa-solid fa-quote-left"></i></div>
+        <p>I got my tech job on Wellfound (AngelList Talent) 4 years ago and I'm still happy! Pays well, great culture, and unlimited PTO.</p>
+    </div>
+    </div>
+    <div style="border: 1px solid gray;" class="col-md-3">
+    <div class="p-5 text-center pb-2">
+        <div style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 45px;"><i class="fa-solid fa-quote-left"></i></div>
+        <p>I love Wellfound (AngelList Talent). I got my current job at a startup entirely through the site last year - it's super easy to use and I love the UI.</p>
+    </div>
+    </div>
+    <div style="border: 1px solid gray;" class="col-md-3">
+    <div class="p-5 text-center pb-2">
+        <div style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 45px;"><i class="fa-solid fa-quote-left"></i></div>
+        <p>I can't imagine my day to day without this platform. Life would be a lot more difficult.</p>
+    </div>
+    </div>
+    <div style="border: 1px solid gray;" class="col-md-3">
+    <div class="p-5 text-center pb-2" >
+        <div style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 45px;"><i class="fa-solid fa-quote-left"></i></div>
+        <p>Half of the offers I give are sourced from Wellfound (AngelList Talent). It's the best product for anyone looking for startup talent.</p>
+    </div>
+    </div>
+    </div>
+    </div><br><br><br>
+
+ <div class="container" style="border-top: 1px solid gainsboro;padding-top: 50px;">
+ </div>
+
+<div class="flexco">
+    <div style="border: 1px solid gainsboro;" class="flex-container">
+       <div style="background-color: bisque; width: 450px;"> <img width="100%" src="https://assets-global.website-files.com/636dd759d71287e8ac7e6280/636dd759d7128741f87e63e7_AGT%20-%20Featured.png" alt="ponk"></div>
+      <div style="padding: 65px 45px 0 0;">
+       <h6 style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"  class="ms-5">Get Featured</h6>
+       <h2 style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" class="ms-5">Let us show you off</h2>
+       <p class="ms-5">Apply to be featured and we'll highlight<br> your profile to top recruiters and<br> companies searching for your specific<br> skills.</p>
+       <p class="ms-5">Oh, it's also 100% free.</p>
+       <button class="btn btn-outline-danger ms-5">Learn more</button>
+      </div>
+    </div>
+    <div style="border: 1px solid gainsboro;" class="flex-container">
+        <div style="background-color:mediumturquoise; width: 450px;"><img width="100%" src="https://assets-global.website-files.com/636dd759d71287e8ac7e6280/636dd759d71287f5ab7e63e6_AGT%20-%20Calculator%201.png" alt="ponk"></div>
+        <div style="padding: 65px 45px 0 0;">
+         <h6 style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" class="ms-5">Salary Calculator</h6>
+         <h2 style="font-weight: bold;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" class="ms-5">Know your worth</h2>
+         <p class="ms-5">We have the data. Research by job<br> title, industry, and company size to find<br> your salary range and be prepared to<br> nail your negotiations.</p>
+         <button class="btn btn-outline-danger ms-5">Learn more</button>
+        </div>
+      </div>
+</div><br><br><br>
+
+<div class="container" style="border-top: 1px solid gainsboro;padding-top: 50px;">
+
+</div>
+<h1 class="container">From the blog</h1><br><br>
+
+<div class="flex-container flexflo">
+<div style="width: 450px;margin-left: 25px; border: 1px solid gainsboro;">
+<img width="100%" src="https://assets-global.website-files.com/636dd759d7128716627e62a9/636dd759d712872b067e635c_Frame%2520292-min-p-800.jpeg" alt="ghh"> 
+<div style="padding: 0 45px 65px 45px;">
+<h5 class="mt-3" style="font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;">Blog Post</h5>
+<h2 style="font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;">The Truth About Finding Your First Engineering Job</h2>
+<p>Even for senior engineers, job searches can be confusing, frustrating affairs. When you're a junior engineer looking for your first job...</p>
+<button class="btn btn-outline-danger">Read more</button>
+</div>   
+</div>
+<div style="width: 450px;margin-left: 25px; border: 1px solid gainsboro;">
+    <img width="100%" src="https://assets-global.website-files.com/636dd759d7128716627e62a9/636dd759d71287d71a7e6361_Frame%2520297-min-p-800.jpeg" alt="ghh"> 
+    <div style="padding: 0 45px 65px 45px;">
+    <h5 class="mt-3" style="font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;">Job Collection</h5>
+    <h2 style="font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;">20 Women-Led Startups Expanding Their Remote Teams in 2022</h2>
+    <p>It is no surprise by now that women make great leaders. In the US alone, women-led businesses generated more than 1.8 trillion dollars...</p>
+    <button class="btn btn-outline-danger">Read more</button>
+    </div>   
+    </div>
+    <div style="width: 450px;margin-left: 25px; border: 1px solid gainsboro;">
+        <img width="100%" src="https://assets-global.website-files.com/636dd759d7128716627e62a9/636dd759d712875bf67e635d_Frame%2520293-min-p-800.jpeg" alt="ghh"> 
+        <div style="padding: 0 45px 65px 45px;">
+        <h5 class="mt-3" style="font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;">Blog Post</h5>
+        <h2 style="font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;">Why Naval Ravikant Thinks Remote Work Is The Future</h2>
+        <p>It feels like the rise of remote works has been a top conversation in tech for years, but despite the enthusiasm and attention...</p>
+        <button class="btn btn-outline-danger">Read more</button>
+        </div>   
+        </div>
+</div><br>
+
+<div class="flex-container flexflo">
+    <div style="width: 450px;margin-left: 25px; border: 1px solid gainsboro;">
+    <img width="100%" src="https://assets-global.website-files.com/636dd759d7128716627e62a9/636dd759d71287a9897e635e_Frame%2520294-min-p-800.jpeg" alt="ghh"> 
+    <div style="padding: 0 45px 0 45px;">
+    <h5 class="mt-3" style="font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;">Blog Post</h5>
+    <h2 style="font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;">18 Innovative Space Startups Hiring Now</h2>
+    <p>Few tech sectors are capturing the public’s collective imagination as much as space. Privatized spaceflight, or “NewSpace,” is attracting...</p>
+    <button class="btn btn-outline-danger">Read more</button>
+    </div>   
+    </div>
+    <div style="width: 450px;margin-left: 25px; border: 1px solid gainsboro;">
+        <img width="100%" src="https://assets-global.website-files.com/636dd759d7128716627e62a9/636dd759d7128719aa7e6360_Frame%2520296-min-p-800.jpeg" alt="ghh"> 
+        <div style="padding: 0 45px 65px 45px;">
+        <h5 class="mt-3" style="font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;">Job Collection</h5>
+        <h2 style="font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;">30 Questions to Ask Before Joining a Startup</h2>
+        <p>You're trying to evaluate the company while still impressing your interviewers, and that balance can be tricky...</p>
+        <button class="btn btn-outline-danger">Read more</button>
+        </div>   
+        </div>
+        <div style="width: 450px;margin-left: 25px; border: 1px solid gainsboro;">
+            <img width="100%" src="https://assets-global.website-files.com/636dd759d7128716627e62a9/636dd759d7128724317e635f_Frame%2520295-min-p-800.jpeg" alt="ghh"> 
+            <div style="padding: 0 45px 65px 45px;">
+            <h5 class="mt-3" style="font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;">Job Collection</h5>
+            <h2 style="font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;">19 Hot Crypto Startups Hiring Remotely in 2022</h2>
+            <p>19 Hot Crypto Startups Hiring Remotely in 2022</p>
+            <button class="btn btn-outline-danger">Read more</button>
+            </div>   
+            </div>
+    </div>
+
+<div>
+    <section>Jobs</section>
+</div>
+
+
+</body>
+</html>

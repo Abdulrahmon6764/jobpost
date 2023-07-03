@@ -1,0 +1,16 @@
+const express = require('express')
+const app =  express()
+const bodyParser = require('body-parser')
+app.set('view engine','ejs')
+const homeRoute = require('./routes/index')
+const finjob = require('./routes/finjob')
+const path = require('path')
+app.use(express.static(path.join (__dirname,'imag')))
+// app.use(express.static(path.join(__dirname, 'css')))
+app.use(express.static(path.join(__dirname,'public')))
+app.use(bodyParser.urlencoded ({extended:true}))
+
+
+app.use(finjob)
+app.use(homeRoute)
+app.listen(7000)

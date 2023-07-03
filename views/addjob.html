@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Jobs</title>
+    <style>
+        *{
+            margin: none;
+            padding: none;
+            box-sizing: border-box;
+        }
+         .d-flex{
+            list-style-type: none;
+            font-size: 22px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         }
+         li a{
+            text-decoration: none;
+         }
+         .nav a{
+           padding-top:5px ;
+           padding-left: 5px;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           color: darkslateblue;
+           font-size: 25px;
+           font-weight: bold;
+         }  
+            .sticky{
+                position: sticky;
+                top: 0px;
+            }
+            .lil a.active {
+ border-bottom: 3px solid black;
+  color: white;
+}
+
+.lil a:hover:not(.active) {
+  color: black;
+} 
+
+.bgbodytertiary{
+    background-color:burlywood;
+}
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar sticky bgbodytertiary">
+        <div class="container">
+           <span class="nav">
+            <img width="70px" src="https://th.bing.com/th/id/R.1f134c5f399d6bec70182c72791b7a92?rik=PEbXANTyri4VLQ&pid=ImgRaw&r=0" alt="stars">
+            <a  class="navbar-brand">Lights Job</a>
+           </span>
+          <form  role="search">
+            <ul class="d-flex">
+                <li class="me-5 lil">
+                 <a href="/">Home</a>
+                </li>
+                <li class="me-5 lil">
+                 <a href="/findJob">Find Job</a>
+                </li>
+                <li class="me-5 lil">
+                  <a class="active" href="/add-Job">Post Job</a>
+                </li>
+            </ul>
+          </form>
+        </div>
+      </nav>
+      <div class="container mt-4">
+        <h1 style="font-weight: bold;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Post Your Job</h1>
+        <form action="/add-Job" method="post" class="col-md-6 text-center">
+        <label  style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: cadetblue;font-weight: bold;" for="title" class="form-label mb-3">Job Title:</label>
+         <input  type="text" class="form-control mb-3" name="title" >
+         <label style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: cadetblue;font-weight: bold;" for="url" class="form-label mb-3">Company Website:</label>
+         <input  type="text" class="form-control mb-3" name="url" >
+         <label style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: cadetblue;font-weight: bold;" for="company" class="form-label mb-3">Company Information:</label>
+         <input  type="text" class="form-control mb-3" name="company" >
+         <label style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: cadetblue;font-weight: bold;" for="location" class="form-label mb-3">Location:</label>
+         <input  type="text" class="form-control mb-3" name="location" >
+         <label style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: cadetblue;font-weight: bold;" for="contact" class="form-label mb-3">Contact Information:</label>
+         <input   type="text" class="form-control mb-3" name="contact">
+         <label style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: cadetblue;font-weight: bold;" for="employment" class="form-label mb-3">Employment Type:</label>
+         <input  type="text" class="form-control mb-3" name="employment">
+         <label style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: cadetblue;font-weight: bold;" for="application" class="form-label mb-3">Application Instructions:</label>
+         <input  type="text" class="form-control mb-3" name="application">
+         <label style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: cadetblue;font-weight: bold;" for="salary" class="form-label mb-3">Compensation and Benefits:</label>
+         <input  type="text" class="form-control mb-3" name="salary">
+         <label style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: cadetblue;font-weight: bold;" for="experience" class="form-label mb-3">Experience Level:</label>
+         <input  type="text" class="form-control mb-3" name="experience">
+         <label style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: cadetblue;font-weight: bold;" class="mb-3"  for="inputGroupFile01">Upload Images:</label>
+         <input type="file" class="form-control mb-3" name="images"> 
+         <label style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: cadetblue;font-weight: bold;" class="mb-3"  for="inputGroupFile01">Deadline Date:</label>
+         <input type="text" class="form-control mb-3" name="date">             
+         <label style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: cadetblue;font-weight: bold;"  for="exampleFormControlTextarea1" class="form-label">Description:</label>
+        <textarea class="form-control" name="descrption" rows="5"></textarea>
+        <button type="submit" class="btn btn-outline-danger mt-3 ps-5 pe-5">Post</button>
+        </form>
+      </div><br><br><br>
+</body>
+</html>
